@@ -18,7 +18,7 @@ st.markdown("""
 @st.cache_resource
 def load_trained_model():
     try:
-        return joblib.load('best_mercari_model.joblib')
+        return joblib.load('model.joblib')
     except:
         return None
 
